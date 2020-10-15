@@ -2,7 +2,7 @@
 <launch>
   <arg name="address" default="127.0.0.1"/>
   <arg name="env_name" default="env.bash"/>
-  <arg name="user_name" default="intern1"/>
+  <arg name="user_name" default="pi"/>
   <arg name="password" default="turtlebot"/>
   
   <arg name="use_robot_name" default="tb3_hsc"/>

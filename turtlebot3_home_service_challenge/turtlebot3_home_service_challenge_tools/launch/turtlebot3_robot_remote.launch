@@ -35,7 +35,7 @@
     <param name="serial_port"         type="string" value="/dev/ttyUSB0"/>
     <param name="serial_baudrate"     type="int"    value="115200"/><!--A2 -->
     <!--param name="serial_baudrate"     type="int"    value="256000"--><!--A3 -->
-    <param name="frame_id"            type="string" value="laser"/>
+    <param name="frame_id" value="$(arg use_robot_name)/$(arg set_lidar_frame_id)"/>
     <param name="inverted"            type="bool"   value="false"/>
     <param name="angle_compensate"    type="bool"   value="true"/>
     <remap if="$(arg use_filter)" from="scan" to="scan_raw"/>
@@ -60,7 +60,7 @@
     </node>
 
     <!-- rpi camera -->
-  <node machine="tb3" type="usb_cam_node" pkg="usb_cam" name="head_camera_node" output="screen">
+  <node machine="tb3" type="usb_cam_node" pkg="usb_cam" name="usb_cam" output="screen">
     <param name="video_device" value="/dev/video0" />
     <param name="image_width" value="640" />
     <param name="image_height" value="480" />

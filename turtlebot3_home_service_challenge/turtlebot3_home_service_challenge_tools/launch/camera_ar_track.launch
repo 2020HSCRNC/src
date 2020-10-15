@@ -5,12 +5,12 @@
   <arg name="max_track_error" default="0.2" />
   <arg name="sim" default="false" />
                 
-  <arg name="cam_image_topic" default="/$(arg use_robot_name)/raspicam_node/image" />
-  <arg name="cam_info_topic" default="/$(arg use_robot_name)/raspicam_node/camera_info" />
+  <arg name="cam_image_topic" default="/$(arg use_robot_name)/usb_cam/image" />
+  <arg name="cam_info_topic" default="/$(arg use_robot_name)/usb_cam/camera_info" />
   <arg name="sim_cam_image_topic" value="/$(arg use_robot_name)/camera/rgb/image_raw" />
   <arg name="sim_cam_info_topic" value="/$(arg use_robot_name)/camera/rgb/camera_info" />
         
-  <arg name="output_frame" default="/$(arg use_robot_name)/camera_rgb_optical_frame" />
+  <arg name="output_frame" default="/$(arg use_robot_name)/base_scan" />
   <arg name="bundle_files" default="$(find ar_track_alvar)/bundles/truthTableLeg.xml $(find ar_track_alvar)/bundles/table_8_9_10.xml" />
 
   <!-- <node name="ar_track_alvar" pkg="ar_track_alvar" type="findMarkerBundlesNoKinect" respawn="false" output="screen" args="$(arg marker_size) $(arg max_new_marker_error) $(arg max_track_error) $(arg cam_image_topic) $(arg cam_info_topic) $(arg output_frame) $(arg bundle_files)" /> -->
