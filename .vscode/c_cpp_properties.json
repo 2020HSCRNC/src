@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/intern1/catkin_ws/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/intern1/catkin_ws/src/rosserial-melodic-devel/rosserial_server/include/**",
+                "/home/intern1/catkin_ws/src/rosserial-melodic-devel/rosserial_test/include/**",
+                "/home/intern1/catkin_ws/src/turtlebot3_home_service_challenge-master/turtlebot3_home_service_challenge_manager/include/**",
+                "/home/intern1/catkin_ws/src/turtlebot3_home_service_challenge-master/turtlebot3_home_service_challenge_tools/include/**",
+                "/home/intern1/catkin_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_bringup/include/**",
+                "/home/intern1/catkin_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_gui/include/**",
+                "/home/intern1/catkin_ws/src/turtlebot3-master/turtlebot3_slam/include/**",
+                "/home/intern1/catkin_ws/src/usb_cam/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14"
+        }
+    ],
+    "version": 4
+}
