@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-  <arg name="address" default="192.168.43.78"/>
+  <arg name="address" default="192.168.0.6"/>
   <arg name="env_name" default="env.bash"/>
   <arg name="user_name" default="rnc"/>
   <arg name="password" default="0000"/>
@@ -23,8 +23,8 @@
   <group ns="$(arg use_robot_name)">
     <node machine="tb3" type="usb_cam_node" pkg="usb_cam" name="usb_cam" output="screen">
       <param name="video_device" value="/dev/video0" />
-      <param name="image_width" value="1280" />
-      <param name="image_height" value="720" />
+      <param name="image_width" value="640" />
+      <param name="image_height" value="360" />
       <param name="pixel_format" value="yuyv" />
       <param name="camera_frame_id" value="$(arg camera_frame_id)" />
       <param name="io_method" value="mmap"/>
@@ -38,6 +38,7 @@
     
       <param name="camera_name" value="$(arg camera_name)"/>
     </node>
+  <!-- <node name="image_republish" pkg="image_transport" type="republish" args="compressed in:=/$(arg use_robot_name)/usb_cam/image_raw/compressed raw out:=/$(arg use_robot_name)/usb_cam/image_raw" respawn="true" /> -->
   </group>
 
   <!-- <node machine="tb3" type="raspicam_node" pkg="raspicam_node" name="raspicam_node" output="screen">

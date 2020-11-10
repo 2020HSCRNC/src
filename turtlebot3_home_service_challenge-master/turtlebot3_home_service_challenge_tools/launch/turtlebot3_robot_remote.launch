@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-  <arg name="address" default="127.0.0.1"/>
+  <arg name="address" default="192.168.0.6"/>
   <arg name="env_name" default="env.bash"/>
   <arg name="user_name" default="rnc"/>
   <arg name="password" default="0000"/>

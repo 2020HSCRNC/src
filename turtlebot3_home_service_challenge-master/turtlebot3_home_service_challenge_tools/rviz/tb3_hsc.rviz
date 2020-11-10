@@ -331,7 +331,7 @@ Visualization Manager:
       Name: Camera
       Overlay Alpha: 0.5
       Queue Size: 2
-      Transport Hint: raw
+      Transport Hint: compressed
       Unreliable: false
       Value: true
       Visibility:

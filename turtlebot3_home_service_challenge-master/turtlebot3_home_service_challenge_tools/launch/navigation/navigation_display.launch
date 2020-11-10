@@ -2,7 +2,7 @@
   <!-- Arguments -->
   <arg name="use_robot_name" default="tb3_hsc"/>
   <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
-  <arg name="map_file" default="$(find turtlebot3_home_service_challenge_tools)/maps/tb3_hsc.yaml"/>
+  <arg name="map_file" default="$(find turtlebot3_home_service_challenge_tools)/maps/test2.yaml"/>
   <arg name="open_rviz" default="true"/>
 
   <!-- rviz -->
